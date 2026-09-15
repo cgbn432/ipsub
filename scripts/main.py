@@ -28,6 +28,7 @@ SOURCE_URLS = [
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
+    "https://shadowmere.xyz/api/b64sub/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
 ]
 
