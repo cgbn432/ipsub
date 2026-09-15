@@ -6,18 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - xiaohe",
-        "🇫🇮 FI 02 - xiaohe",
-        "🇫🇮 FI 03 - xiaohe"
+        "🇫🇮 FI 01 - sub",
+        "🇫🇮 FI 02 - sub",
+        "🇫🇮 FI 03 - sub",
+        "🇫🇮 FI 04 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - xiaohe",
-        "🇫🇮 FI 02 - xiaohe",
-        "🇫🇮 FI 03 - xiaohe"
+        "🇫🇮 FI 01 - sub",
+        "🇫🇮 FI 02 - sub",
+        "🇫🇮 FI 03 - sub",
+        "🇫🇮 FI 04 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
