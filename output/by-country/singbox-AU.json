@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - sub",
-        "🇦🇺 澳大利亚 (Australia) 02 - sub",
-        "🇦🇺 澳大利亚 (Australia) 03 - sub",
-        "🇦🇺 澳大利亚 (Australia) 04 - sub"
+        "🇦🇺 澳大利亚 (Australia) 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - sub",
-        "🇦🇺 澳大利亚 (Australia) 02 - sub",
-        "🇦🇺 澳大利亚 (Australia) 03 - sub",
-        "🇦🇺 澳大利亚 (Australia) 04 - sub"
+        "🇦🇺 澳大利亚 (Australia) 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },

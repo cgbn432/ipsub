@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - sub",
-        "🇸🇦 SA 02 - sub",
-        "🇸🇦 SA 03 - sub",
-        "🇸🇦 SA 04 - sub"
+        "🇷🇴 RO 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - sub",
-        "🇸🇦 SA 02 - sub",
-        "🇸🇦 SA 03 - sub",
-        "🇸🇦 SA 04 - sub"
+        "🇷🇴 RO 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
