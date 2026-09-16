@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - sub",
-        "🇨🇿 CZ 02 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - sub",
-        "🇨🇿 CZ 02 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
