@@ -6,6 +6,44 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sub
   type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 02 - sub
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - sub
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - sub
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -17,49 +55,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - sub
-  type: vless
-  server: 104.21.67.122
-  port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 03 - sub
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 04 - sub
-  type: vless
-  server: 104.24.30.89
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
 - name: 🇦🇪 阿联酋 (UAE) 05 - sub
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -81,32 +79,35 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 07 - sub
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 08 - sub
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
+- name: 🇦🇪 阿联酋 (UAE) 08 - sub
+  type: vless
+  server: 151.242.160.148
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 - name: 🇦🇪 阿联酋 (UAE) 09 - sub
   type: vless
   server: uae.unixzone.us
@@ -122,85 +123,16 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 10 - sub
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - sub
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 13 - sub
-  type: vless
-  server: 162.159.152.4
+  server: 89.125.147.199
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 14 - sub
-  type: vless
-  server: 95.181.162.170
-  port: 444
-  uuid: 751b51bc-af59-4b04-93c0-3fed4965297e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 15 - sub
-  type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -216,11 +148,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - sub
   - 🇦🇪 阿联酋 (UAE) 09 - sub
   - 🇦🇪 阿联酋 (UAE) 10 - sub
-  - 🇦🇪 阿联酋 (UAE) 11 - sub
-  - 🇦🇪 阿联酋 (UAE) 12 - sub
-  - 🇦🇪 阿联酋 (UAE) 13 - sub
-  - 🇦🇪 阿联酋 (UAE) 14 - sub
-  - 🇦🇪 阿联酋 (UAE) 15 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -236,10 +163,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - sub
   - 🇦🇪 阿联酋 (UAE) 09 - sub
   - 🇦🇪 阿联酋 (UAE) 10 - sub
-  - 🇦🇪 阿联酋 (UAE) 11 - sub
-  - 🇦🇪 阿联酋 (UAE) 12 - sub
-  - 🇦🇪 阿联酋 (UAE) 13 - sub
-  - 🇦🇪 阿联酋 (UAE) 14 - sub
-  - 🇦🇪 阿联酋 (UAE) 15 - sub
 rules:
 - MATCH,PROXIES
