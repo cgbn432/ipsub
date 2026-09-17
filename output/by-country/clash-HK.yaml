@@ -18,8 +18,24 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: www.pubgmobile.com
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sub
+  type: vmess
+  server: 47.83.19.148
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -33,56 +49,8 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
-  type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+      Host: www.pubgmobile.com
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - sub
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - sub
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yoga-suggesting-recording-calls.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
-    headers:
-      Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - sub
   type: vmess
   server: wwafj5lhl6bi8au9.v.3dns.vip
   port: 443
@@ -98,9 +66,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: wwafj5lhl6bi8au9.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - sub
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - sub
   type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -114,6 +82,38 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - sub
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sub
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
