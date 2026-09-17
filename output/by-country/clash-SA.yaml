@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - sub
+- name: 🇸🇦 SA 01 - sub
   type: vless
-  server: 195.85.23.219
+  server: 91.209.253.42
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - sub
+- name: 🇸🇦 SA 02 - sub
   type: vless
-  server: 195.85.23.217
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -32,9 +32,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - sub
+- name: 🇸🇦 SA 03 - sub
   type: vless
-  server: 195.85.23.88
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +46,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - sub
+- name: 🇸🇦 SA 04 - sub
   type: vless
-  server: 195.85.23.47
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -60,9 +60,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - sub
+- name: 🇸🇦 SA 05 - sub
   type: vless
-  server: 195.85.23.252
+  server: 91.209.253.119
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -74,9 +74,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 06 - sub
+- name: 🇸🇦 SA 06 - sub
   type: vless
-  server: 195.85.23.248
+  server: 91.209.253.250
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -88,9 +88,23 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - sub
+- name: 🇸🇦 SA 07 - sub
   type: vless
-  server: 195.85.23.111
+  server: 91.209.253.244
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 08 - sub
+  type: vless
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -102,9 +116,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - sub
+- name: 🇸🇦 SA 09 - sub
   type: vless
-  server: 195.85.23.45
+  server: 91.209.253.109
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -116,9 +130,9 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 09 - sub
+- name: 🇸🇦 SA 10 - sub
   type: vless
-  server: 195.85.23.29
+  server: 91.209.253.243
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -130,9 +144,37 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - sub
+- name: 🇸🇦 SA 11 - sub
   type: vless
-  server: 195.85.23.75
+  server: 91.209.253.229
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 12 - sub
+  type: vless
+  server: 91.209.253.216
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇸🇦 SA 13 - sub
+  type: vless
+  server: 91.209.253.216
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -149,30 +191,36 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - sub
-  - 🇨🇿 CZ 02 - sub
-  - 🇨🇿 CZ 03 - sub
-  - 🇨🇿 CZ 04 - sub
-  - 🇨🇿 CZ 05 - sub
-  - 🇨🇿 CZ 06 - sub
-  - 🇨🇿 CZ 07 - sub
-  - 🇨🇿 CZ 08 - sub
-  - 🇨🇿 CZ 09 - sub
-  - 🇨🇿 CZ 10 - sub
+  - 🇸🇦 SA 01 - sub
+  - 🇸🇦 SA 02 - sub
+  - 🇸🇦 SA 03 - sub
+  - 🇸🇦 SA 04 - sub
+  - 🇸🇦 SA 05 - sub
+  - 🇸🇦 SA 06 - sub
+  - 🇸🇦 SA 07 - sub
+  - 🇸🇦 SA 08 - sub
+  - 🇸🇦 SA 09 - sub
+  - 🇸🇦 SA 10 - sub
+  - 🇸🇦 SA 11 - sub
+  - 🇸🇦 SA 12 - sub
+  - 🇸🇦 SA 13 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - sub
-  - 🇨🇿 CZ 02 - sub
-  - 🇨🇿 CZ 03 - sub
-  - 🇨🇿 CZ 04 - sub
-  - 🇨🇿 CZ 05 - sub
-  - 🇨🇿 CZ 06 - sub
-  - 🇨🇿 CZ 07 - sub
-  - 🇨🇿 CZ 08 - sub
-  - 🇨🇿 CZ 09 - sub
-  - 🇨🇿 CZ 10 - sub
+  - 🇸🇦 SA 01 - sub
+  - 🇸🇦 SA 02 - sub
+  - 🇸🇦 SA 03 - sub
+  - 🇸🇦 SA 04 - sub
+  - 🇸🇦 SA 05 - sub
+  - 🇸🇦 SA 06 - sub
+  - 🇸🇦 SA 07 - sub
+  - 🇸🇦 SA 08 - sub
+  - 🇸🇦 SA 09 - sub
+  - 🇸🇦 SA 10 - sub
+  - 🇸🇦 SA 11 - sub
+  - 🇸🇦 SA 12 - sub
+  - 🇸🇦 SA 13 - sub
 rules:
 - MATCH,PROXIES
