@@ -6,46 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - sub
   type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 02 - sub
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - sub
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 04 - sub
-  type: vless
   server: a2.arshia-nova.ir
   port: 443
   uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
@@ -58,9 +18,23 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 05 - sub
+- name: 🇫🇮 FI 02 - sub
   type: vless
   server: 212.104.128.152
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 03 - sub
+  type: vless
+  server: 212.104.128.68
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -80,8 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
   - 🇫🇮 FI 03 - sub
-  - 🇫🇮 FI 04 - sub
-  - 🇫🇮 FI 05 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,7 +62,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
   - 🇫🇮 FI 03 - sub
-  - 🇫🇮 FI 04 - sub
-  - 🇫🇮 FI 05 - sub
 rules:
 - MATCH,PROXIES
