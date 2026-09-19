@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - sub
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - sub
   type: vless
-  server: 195.85.23.219
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,17 +34,18 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - sub
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
+  server: 195.85.23.45
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: fornewiran.ade-1000.workers.dev
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
