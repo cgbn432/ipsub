@@ -6,6 +6,44 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - sub
   type: vless
+  server: 152.67.101.72
+  port: 23010
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇺 澳大利亚 (Australia) 02 - sub
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 03 - sub
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇦🇺 澳大利亚 (Australia) 04 - sub
+  type: vless
   server: 34.87.244.111
   port: 443
   uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
@@ -16,7 +54,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02 - sub
+- name: 🇦🇺 澳大利亚 (Australia) 05 - sub
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -29,7 +67,7 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 03 - sub
+- name: 🇦🇺 澳大利亚 (Australia) 06 - sub
   type: vless
   server: 103.75.119.126
   port: 2087
@@ -50,6 +88,9 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - sub
   - 🇦🇺 澳大利亚 (Australia) 02 - sub
   - 🇦🇺 澳大利亚 (Australia) 03 - sub
+  - 🇦🇺 澳大利亚 (Australia) 04 - sub
+  - 🇦🇺 澳大利亚 (Australia) 05 - sub
+  - 🇦🇺 澳大利亚 (Australia) 06 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +99,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - sub
   - 🇦🇺 澳大利亚 (Australia) 02 - sub
   - 🇦🇺 澳大利亚 (Australia) 03 - sub
+  - 🇦🇺 澳大利亚 (Australia) 04 - sub
+  - 🇦🇺 澳大利亚 (Australia) 05 - sub
+  - 🇦🇺 澳大利亚 (Australia) 06 - sub
 rules:
 - MATCH,PROXIES
