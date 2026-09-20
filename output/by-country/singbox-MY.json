@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - sub"
+        "🇲🇾 MY 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - sub"
+        "🇲🇾 MY 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
