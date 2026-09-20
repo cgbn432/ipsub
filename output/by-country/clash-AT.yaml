@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - sub
+- name: 🇦🇹 AT 01 - sub
   type: vless
-  server: 89.127.196.14
+  server: 152.53.1.40
   port: 443
-  uuid: 70697368-0000-4000-8000-676100000000
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: zzysieoge63.uurot7rjj8.workers.dev
-  network: ws
-  ws-opts:
-    path: /pishgaman-technology
-    headers:
-      Host: zzysieoge63.uurot7rjj8.workers.dev
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - sub
+  - 🇦🇹 AT 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - sub
+  - 🇦🇹 AT 01 - sub
 rules:
 - MATCH,PROXIES
