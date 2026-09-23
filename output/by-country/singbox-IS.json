@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 IS 01 - sub"
+        "🇮🇸 IS 01 - sub",
+        "🇮🇸 IS 02 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 IS 01 - sub"
+        "🇮🇸 IS 01 - sub",
+        "🇮🇸 IS 02 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
