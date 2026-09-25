@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sub
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - sub
   type: vless
   server: 34.92.145.185
   port: 443
@@ -15,8 +25,8 @@ proxies:
   reality-opts:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - sub
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
   type: vmess
   server: 47.83.207.148
   port: 443
@@ -32,16 +42,6 @@ proxies:
     path: /ws-vmess
     headers:
       Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - sub
   type: vless
   server: 34.92.145.185
@@ -65,6 +65,38 @@ proxies:
   reality-opts:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
   servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - sub
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sub
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - sub
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -76,6 +108,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - sub
   - 🇭🇰 中国香港 (Hong Kong) 04 - sub
   - 🇭🇰 中国香港 (Hong Kong) 05 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 07 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 08 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +121,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - sub
   - 🇭🇰 中国香港 (Hong Kong) 04 - sub
   - 🇭🇰 中国香港 (Hong Kong) 05 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 06 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 07 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 08 - sub
 rules:
 - MATCH,PROXIES
