@@ -5,13 +5,91 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - sub
+  type: vless
+  server: 172.64.146.66
+  port: 443
+  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sie704.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sie704.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 02 - sub
+  type: vless
+  server: 172.66.47.123
+  port: 443
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-tomcat.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: web-tomcat.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 03 - sub
   type: ss
-  server: 51.79.49.116
+  server: 51.222.136.236
   port: 8882
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - sub
+- name: 🇨🇦 加拿大 (Canada) 04 - sub
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 05 - sub
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 06 - sub
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 07 - sub
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 08 - sub
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09 - sub
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -21,7 +99,41 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 03 - sub
+- name: 🇨🇦 加拿大 (Canada) 10 - sub
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 11 - sub
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 12 - sub
+  type: ss
+  server: 142.4.216.225
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 13 - sub
+  type: vmess
+  server: 158.51.123.42
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 14 - sub
   type: vless
   server: 148.113.196.75
   port: 8443
@@ -35,19 +147,9 @@ proxies:
     path: /vless/
     headers:
       Host: 148.113.196.75
-- name: 🇨🇦 加拿大 (Canada) 04 - sub
+- name: 🇨🇦 加拿大 (Canada) 15 - sub
   type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 05 - sub
-  type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -55,7 +157,49 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 06 - sub
+- name: 🇨🇦 加拿大 (Canada) 16 - sub
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 17 - sub
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇨🇦 加拿大 (Canada) 18 - sub
+  type: ss
+  server: 15.235.75.71
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 19 - sub
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 20 - sub
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -67,97 +211,7 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 07 - sub
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 08 - sub
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 09 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 11 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 12 - sub
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - sub
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 14 - sub
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 15 - sub
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - sub
+- name: 🇨🇦 加拿大 (Canada) 21 - sub
   type: vmess
   server: 134.195.198.214
   port: 22324
@@ -167,63 +221,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - sub
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 18 - sub
-  type: ss
-  server: 142.4.216.225
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 19 - sub
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 20 - sub
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 21 - sub
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 22 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.98.146
+  port: 8443
+  uuid: 50414e45-4c5f-5a45-5553-48493148ec15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cgzdynepurqs.mercury061.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/48493148ec15
+    headers:
+      Host: cgzdynepurqs.mercury061.workers.dev
 - name: 🇨🇦 加拿大 (Canada) 23 - sub
   type: ss
-  server: 51.222.12.127
-  port: 445
+  server: 51.79.49.116
+  port: 8882
   cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  password: kDWvXYZoTBcGkC4
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 24 - sub
   type: vmess
@@ -236,6 +253,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 25 - sub
+  type: vless
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 26 - sub
+  type: vless
+  server: 104.18.40.152
+  port: 443
+  uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sie704.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sie704.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 27 - sub
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -245,31 +290,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - sub
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 27 - sub
-  type: vmess
-  server: 134.195.198.214
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 28 - sub
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -309,16 +332,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 32 - sub
   type: vmess
-  server: 66.163.113.176
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 33 - sub
-  type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -327,6 +340,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 33 - sub
+  type: ss
+  server: 185.156.47.97
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 34 - sub
   type: vmess
   server: 134.195.196.211
@@ -339,7 +359,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 35 - sub
   type: vmess
-  server: 158.51.123.42
+  server: 134.195.198.214
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
@@ -349,50 +369,32 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 36 - sub
   type: vless
-  server: 66.70.179.198
+  server: 91.193.58.125
   port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vlso5.1d.mom
 - name: 🇨🇦 加拿大 (Canada) 37 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.66.44.133
+  port: 443
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 38 - sub
-  type: ss
-  server: 185.156.47.97
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 39 - sub
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 40 - sub
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
+  servername: web-tomcat.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: web-tomcat.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -435,9 +437,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 35 - sub
   - 🇨🇦 加拿大 (Canada) 36 - sub
   - 🇨🇦 加拿大 (Canada) 37 - sub
-  - 🇨🇦 加拿大 (Canada) 38 - sub
-  - 🇨🇦 加拿大 (Canada) 39 - sub
-  - 🇨🇦 加拿大 (Canada) 40 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -480,8 +479,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 35 - sub
   - 🇨🇦 加拿大 (Canada) 36 - sub
   - 🇨🇦 加拿大 (Canada) 37 - sub
-  - 🇨🇦 加拿大 (Canada) 38 - sub
-  - 🇨🇦 加拿大 (Canada) 39 - sub
-  - 🇨🇦 加拿大 (Canada) 40 - sub
 rules:
 - MATCH,PROXIES
