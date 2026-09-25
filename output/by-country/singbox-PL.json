@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - sub",
-        "🇮🇪 IE 02 - sub"
+        "🇵🇱 PL 01 - sub",
+        "🇵🇱 PL 02 - sub",
+        "🇵🇱 PL 03 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - sub",
-        "🇮🇪 IE 02 - sub"
+        "🇵🇱 PL 01 - sub",
+        "🇵🇱 PL 02 - sub",
+        "🇵🇱 PL 03 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
