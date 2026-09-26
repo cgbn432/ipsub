@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - sub
+- name: 🇨🇭 CH 01 - sub
   type: vless
-  server: 94.183.170.135
+  server: 185.18.250.245
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /nl-tw
     headers:
-      Host: 94.183.170.135
+      Host: edu.ruangguru.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - sub
+  - 🇨🇭 CH 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - sub
+  - 🇨🇭 CH 01 - sub
 rules:
 - MATCH,PROXIES

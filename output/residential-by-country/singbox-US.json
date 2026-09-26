@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 DK 01 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) - sub",
+        "🇺🇸 美国 (United States) 02 (家宽) - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 DK 01 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) - sub",
+        "🇺🇸 美国 (United States) 02 (家宽) - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
