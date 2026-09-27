@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sub
-  type: vmess
-  server: 8.217.229.155
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sub
   type: ss
   server: sth.free-outline.giize.com
@@ -29,17 +26,18 @@ proxies:
   udp: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
       Host: ''
 proxy-groups:

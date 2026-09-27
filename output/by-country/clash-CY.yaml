@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - sub
+- name: 🇨🇾 CY 01 - sub
   type: vless
-  server: 38.180.225.247
-  port: 2053
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yf.962456.xyz
-  network: ws
-  ws-opts:
-    path: /proxyip=kr.william.us.ci
-    headers:
-      Host: yf.962456.xyz
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - sub
+  - 🇨🇾 CY 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - sub
+  - 🇨🇾 CY 01 - sub
 rules:
 - MATCH,PROXIES
