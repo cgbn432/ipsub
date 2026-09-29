@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 KZ 01 - sub
+- name: 🇦🇱 AL 01 - sub
   type: vless
-  server: 89.218.15.90
-  port: 10002
-  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  server: 85.155.228.185
+  port: 443
+  uuid: ca5ffe64-81e0-42f0-a136-03cc4f662a4f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kz1.vpnjantit.com
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: kz1.vpnjantit.com
+  reality-opts:
+    public-key: 9M294WArTUZ9m1fMmvlHauSb5wZo68SkCW_lEgBVAF8
+  servername: avsal.krusofiya.fun
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 KZ 01 - sub
+  - 🇦🇱 AL 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 KZ 01 - sub
+  - 🇦🇱 AL 01 - sub
 rules:
 - MATCH,PROXIES

@@ -7,12 +7,16 @@ proxies:
 - name: 🇪🇪 EE 01 - sub
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 94.183.170.135
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - sub
   type: vless
   server: 94.183.170.135
@@ -34,7 +38,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 04 - sub
   type: vless
   server: 94.183.170.135
