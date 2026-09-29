@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sub
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -33,6 +33,45 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - sub
   type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - sub
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - sub
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - sub
+  type: vless
   server: 185.112.249.201
   port: 8443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -45,20 +84,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - sub
-  type: vless
-  server: 103.71.23.247
-  port: 443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hk.152568.xyz
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +93,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - sub
   - 🇦🇪 阿联酋 (UAE) 03 - sub
   - 🇦🇪 阿联酋 (UAE) 04 - sub
+  - 🇦🇪 阿联酋 (UAE) 05 - sub
+  - 🇦🇪 阿联酋 (UAE) 06 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +104,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - sub
   - 🇦🇪 阿联酋 (UAE) 03 - sub
   - 🇦🇪 阿联酋 (UAE) 04 - sub
+  - 🇦🇪 阿联酋 (UAE) 05 - sub
+  - 🇦🇪 阿联酋 (UAE) 06 - sub
 rules:
 - MATCH,PROXIES
