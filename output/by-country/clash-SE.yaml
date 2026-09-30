@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - sub
   type: vless
-  server: 2.26.17.128
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 02 - sub
-  type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 03 - sub
-  type: vless
   server: 103.71.22.234
   port: 8443
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
@@ -46,34 +18,30 @@ proxies:
     path: /
     headers:
       Host: shephe.dpdns.org
-- name: 🇸🇪 SE 04 - sub
+- name: 🇸🇪 SE 02 - sub
   type: vless
-  server: 103.71.22.26
+  server: 34.51.240.236
   port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 05 - sub
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 03 - sub
   type: vless
-  server: 103.71.22.26
+  server: 34.51.187.118
   port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +50,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
-  - 🇸🇪 SE 04 - sub
-  - 🇸🇪 SE 05 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +58,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
-  - 🇸🇪 SE 04 - sub
-  - 🇸🇪 SE 05 - sub
 rules:
 - MATCH,PROXIES
