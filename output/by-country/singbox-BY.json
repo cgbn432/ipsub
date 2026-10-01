@@ -6,14 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 BE 01 - sub"
+        "🇧🇾 BY 01 - sub",
+        "🇧🇾 BY 02 - sub",
+        "🇧🇾 BY 03 - sub",
+        "🇧🇾 BY 04 - sub",
+        "🇧🇾 BY 05 - sub",
+        "🇧🇾 BY 06 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 BE 01 - sub"
+        "🇧🇾 BY 01 - sub",
+        "🇧🇾 BY 02 - sub",
+        "🇧🇾 BY 03 - sub",
+        "🇧🇾 BY 04 - sub",
+        "🇧🇾 BY 05 - sub",
+        "🇧🇾 BY 06 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
