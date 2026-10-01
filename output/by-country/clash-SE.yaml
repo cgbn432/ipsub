@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - sub
   type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 02 - sub
-  type: vless
   server: 34.51.240.236
   port: 443
   uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
@@ -36,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - sub
-  - 🇸🇪 SE 02 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - sub
-  - 🇸🇪 SE 02 - sub
 rules:
 - MATCH,PROXIES
