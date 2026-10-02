@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - sub",
+        "🇰🇬 KG 02 - sub",
+        "🇰🇬 KG 03 - sub",
+        "🇰🇬 KG 04 - sub",
+        "🇰🇬 KG 05 - sub",
+        "🇰🇬 KG 06 - sub",
+        "🇰🇬 KG 07 - sub",
+        "🇰🇬 KG 08 - sub",
+        "🇰🇬 KG 09 - sub"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - sub",
+        "🇰🇬 KG 02 - sub",
+        "🇰🇬 KG 03 - sub",
+        "🇰🇬 KG 04 - sub",
+        "🇰🇬 KG 05 - sub",
+        "🇰🇬 KG 06 - sub",
+        "🇰🇬 KG 07 - sub",
+        "🇰🇬 KG 08 - sub",
+        "🇰🇬 KG 09 - sub"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

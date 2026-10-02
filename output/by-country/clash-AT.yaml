@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - sub
+  type: vless
+  server: 109.172.8.73
+  port: 443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇦🇹 AT 02 - sub
+  type: vless
+  server: 109.172.8.48
+  port: 8443
+  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.nihaoyun.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.nihaoyun.top
+- name: 🇦🇹 AT 03 - sub
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -17,11 +45,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇹 AT 01 - sub
+  - 🇦🇹 AT 02 - sub
+  - 🇦🇹 AT 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 AT 01 - sub
+  - 🇦🇹 AT 02 - sub
+  - 🇦🇹 AT 03 - sub
 rules:
 - MATCH,PROXIES
