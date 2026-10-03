@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - sub",
-        "🇨🇿 CZ 02 - sub",
-        "🇨🇿 CZ 03 - sub"
+        "🇨🇿 CZ 02 - sub"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - sub",
-        "🇨🇿 CZ 02 - sub",
-        "🇨🇿 CZ 03 - sub"
+        "🇨🇿 CZ 02 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },

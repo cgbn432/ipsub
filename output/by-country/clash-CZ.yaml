@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - sub
   type: vless
-  server: 8.6.112.9
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇨🇿 CZ 02 - sub
-  type: vless
-  server: cz.monkora.org
+  server: 86.54.82.184
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
@@ -30,9 +16,9 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
-- name: 🇨🇿 CZ 03 - sub
+- name: 🇨🇿 CZ 02 - sub
   type: vless
-  server: 86.54.82.184
+  server: cz.monkora.org
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
@@ -49,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - sub
   - 🇨🇿 CZ 02 - sub
-  - 🇨🇿 CZ 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - sub
   - 🇨🇿 CZ 02 - sub
-  - 🇨🇿 CZ 03 - sub
 rules:
 - MATCH,PROXIES

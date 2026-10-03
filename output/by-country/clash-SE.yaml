@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - sub
+  type: ss
+  server: sw.roshdiran1.ir
+  port: 53425
+  cipher: chacha20-ietf-poly1305
+  password: aIeil4UUGSF5wo1kg9TebZfXOFLCZ66G
+  udp: true
+- name: 🇸🇪 SE 02 - sub
   type: vless
   server: 199.68.198.13
   port: 443
@@ -16,17 +23,35 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
+- name: 🇸🇪 SE 03 - sub
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - sub
+  - 🇸🇪 SE 02 - sub
+  - 🇸🇪 SE 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - sub
+  - 🇸🇪 SE 02 - sub
+  - 🇸🇪 SE 03 - sub
 rules:
 - MATCH,PROXIES

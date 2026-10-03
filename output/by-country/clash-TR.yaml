@@ -6,45 +6,28 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sub
   type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  server: 176.96.131.251
+  port: 1280
+  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
+    path: /
     headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 02 - sub
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
+      Host: 176.96.131.251
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sub
-  - 🇹🇷 土耳其 (Turkey) 02 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
-  - 🇹🇷 土耳其 (Turkey) 02 - sub
 rules:
 - MATCH,PROXIES

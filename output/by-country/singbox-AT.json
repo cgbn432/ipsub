@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - sub"
+        "🇦🇹 AT 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - sub"
+        "🇦🇹 AT 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
