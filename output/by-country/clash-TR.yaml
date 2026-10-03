@@ -15,15 +15,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - sub
-  type: ss
-  server: bale.xv98.ir
-  port: 5051
-  cipher: chacha20-ietf-poly1305
-  password: 68mL2QkZEBlxWa3hcslGDw
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - sub
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -34,7 +27,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 - sub
 rules:
 - MATCH,PROXIES
