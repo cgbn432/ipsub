@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇾 BY 01 - sub",
+        "🇧🇾 BY 02 - sub",
+        "🇧🇾 BY 03 - sub",
+        "🇧🇾 BY 04 - sub",
+        "🇧🇾 BY 05 - sub",
+        "🇧🇾 BY 06 - sub"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇾 BY 01 - sub",
+        "🇧🇾 BY 02 - sub",
+        "🇧🇾 BY 03 - sub",
+        "🇧🇾 BY 04 - sub",
+        "🇧🇾 BY 05 - sub",
+        "🇧🇾 BY 06 - sub"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
