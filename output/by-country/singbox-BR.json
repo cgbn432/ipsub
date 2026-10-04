@@ -7,8 +7,7 @@
       "outbounds": [
         "auto",
         "🇧🇷 BR 01 - sub",
-        "🇧🇷 BR 02 - sub",
-        "🇧🇷 BR 03 - sub"
+        "🇧🇷 BR 02 - sub"
       ]
     },
     {
@@ -16,8 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 BR 01 - sub",
-        "🇧🇷 BR 02 - sub",
-        "🇧🇷 BR 03 - sub"
+        "🇧🇷 BR 02 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
