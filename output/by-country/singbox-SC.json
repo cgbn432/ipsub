@@ -7,7 +7,10 @@
       "outbounds": [
         "auto",
         "🇸🇨 SC 01 - sub",
-        "🇸🇨 SC 02 - sub"
+        "🇸🇨 SC 02 - sub",
+        "🇸🇨 SC 03 - sub",
+        "🇸🇨 SC 04 - sub",
+        "🇸🇨 SC 05 - sub"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 SC 01 - sub",
-        "🇸🇨 SC 02 - sub"
+        "🇸🇨 SC 02 - sub",
+        "🇸🇨 SC 03 - sub",
+        "🇸🇨 SC 04 - sub",
+        "🇸🇨 SC 05 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
