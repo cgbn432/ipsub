@@ -4,16 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - sub
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 02 - sub
+- name: 🇱🇹 LT 01 - sub
   type: vless
-  server: 45.85.118.50
+  server: 89.116.180.30
   port: 8880
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
@@ -23,20 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime55.workers.dev
+      Host: vms.lifetime09.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - sub
-  - 🇷🇴 RO 02 - sub
+  - 🇱🇹 LT 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - sub
-  - 🇷🇴 RO 02 - sub
+  - 🇱🇹 LT 01 - sub
 rules:
 - MATCH,PROXIES
