@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - sub
   type: vmess
-  server: aksai.org
+  server: 82.117.225.80
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
