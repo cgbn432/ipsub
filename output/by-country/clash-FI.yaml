@@ -13,19 +13,33 @@ proxies:
   udp: true
 - name: 🇫🇮 FI 02 - sub
   type: vless
-  server: 144.31.99.252
+  server: 199.232.239.239
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2056
     headers:
-      Host: ccc.010304.xyz
+      Host: uol258ehdmsohzh.global.ssl.fastly.net
 - name: 🇫🇮 FI 03 - sub
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?ed=2056/?TELEGRAM--BYA--CHANEL---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCAN---@GHOFLSHCANfp=firefox
+    headers:
+      Host: uol258ehdmsohzh.global.ssl.fastly.net
+- name: 🇫🇮 FI 04 - sub
   type: ss
   server: 45.149.114.171
   port: 777
@@ -40,6 +54,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
   - 🇫🇮 FI 03 - sub
+  - 🇫🇮 FI 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +63,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
   - 🇫🇮 FI 03 - sub
+  - 🇫🇮 FI 04 - sub
 rules:
 - MATCH,PROXIES
