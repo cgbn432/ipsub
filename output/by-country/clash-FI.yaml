@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - sub
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 02 - sub
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 03 - sub
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -30,7 +16,14 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - sub
+- name: 🇫🇮 FI 02 - sub
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 03 - sub
   type: vless
   server: 144.31.99.252
   port: 443
@@ -44,6 +37,13 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇫🇮 FI 04 - sub
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 - name: 🇫🇮 FI 05 - sub
   type: ss
   server: 185.103.110.68

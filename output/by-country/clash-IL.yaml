@@ -13,6 +13,20 @@ proxies:
   udp: true
 - name: 🇮🇱 IL 02 - sub
   type: vless
+  server: 185.253.75.119
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇮🇱 IL 03 - sub
+  type: vless
   server: 177.3.208.65
   port: 443
   uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
@@ -32,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇮🇱 IL 01 - sub
   - 🇮🇱 IL 02 - sub
+  - 🇮🇱 IL 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇮🇱 IL 01 - sub
   - 🇮🇱 IL 02 - sub
+  - 🇮🇱 IL 03 - sub
 rules:
 - MATCH,PROXIES
