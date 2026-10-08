@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sub
   type: vless
-  server: eu86.vaultberry.cloud
-  port: 443
-  uuid: 73bec071-8d42-4294-a453-de168627649b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - sub
-  type: vless
-  server: 94.183.193.24
-  port: 443
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - sub
-  type: vless
-  server: eu86.vaultberry.cloud
-  port: 443
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - sub
-  type: vless
-  server: eu86.vaultberry.cloud
-  port: 443
-  uuid: 73bec071-8d42-4294-a453-de168627649b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - sub
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -65,30 +17,32 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - sub
+- name: 🇦🇪 阿联酋 (UAE) 02 - sub
   type: vless
-  server: 94.183.193.4
-  port: 443
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - sub
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - sub
   type: vless
-  server: 94.183.193.212
+  server: 130.185.121.69
   port: 443
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
+  uuid: d3c9d170-80fa-489a-8ba2-f4cc80d240e3
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 130.185.121.69
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,10 +51,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - sub
   - 🇦🇪 阿联酋 (UAE) 02 - sub
   - 🇦🇪 阿联酋 (UAE) 03 - sub
-  - 🇦🇪 阿联酋 (UAE) 04 - sub
-  - 🇦🇪 阿联酋 (UAE) 05 - sub
-  - 🇦🇪 阿联酋 (UAE) 06 - sub
-  - 🇦🇪 阿联酋 (UAE) 07 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,9 +59,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - sub
   - 🇦🇪 阿联酋 (UAE) 02 - sub
   - 🇦🇪 阿联酋 (UAE) 03 - sub
-  - 🇦🇪 阿联酋 (UAE) 04 - sub
-  - 🇦🇪 阿联酋 (UAE) 05 - sub
-  - 🇦🇪 阿联酋 (UAE) 06 - sub
-  - 🇦🇪 阿联酋 (UAE) 07 - sub
 rules:
 - MATCH,PROXIES
