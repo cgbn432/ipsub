@@ -15,20 +15,7 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - sub
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - sub
-  type: vless
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -40,7 +27,47 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 03 - sub
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - sub
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 05 - sub
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 06 - sub
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - sub
   type: vless
   server: ee10.zazazuza.ru
   port: 8443
@@ -54,38 +81,6 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 05 - sub
-  type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 06 - sub
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - sub
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 08 - sub
   type: vless
   server: 77.72.85.247
@@ -102,7 +97,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 09 - sub
   type: vless
-  server: 77.72.85.247
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -117,6 +112,47 @@ proxies:
 - name: 🇪🇪 EE 10 - sub
   type: vless
   server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 11 - sub
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 12 - sub
+  type: vless
+  server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 13 - sub
+  type: vless
+  server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -143,6 +179,9 @@ proxy-groups:
   - 🇪🇪 EE 08 - sub
   - 🇪🇪 EE 09 - sub
   - 🇪🇪 EE 10 - sub
+  - 🇪🇪 EE 11 - sub
+  - 🇪🇪 EE 12 - sub
+  - 🇪🇪 EE 13 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +197,8 @@ proxy-groups:
   - 🇪🇪 EE 08 - sub
   - 🇪🇪 EE 09 - sub
   - 🇪🇪 EE 10 - sub
+  - 🇪🇪 EE 11 - sub
+  - 🇪🇪 EE 12 - sub
+  - 🇪🇪 EE 13 - sub
 rules:
 - MATCH,PROXIES

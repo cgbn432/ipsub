@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sub
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -16,7 +16,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 02 - sub
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -26,7 +26,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 03 - sub
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -35,18 +35,26 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 04 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 05 - sub
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - sub
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -58,21 +66,9 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 06 - sub
-  type: vless
-  server: 34.87.113.18
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 07 - sub
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -81,346 +77,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 08 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 09 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - sub
-  type: vless
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 11 - sub
-  type: vless
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 12 - sub
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 13 - sub
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - sub
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 15 - sub
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 16 - sub
-  type: vless
-  server: 170.114.46.6
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 17 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 18 - sub
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 20 - sub
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 21 - sub
-  type: vless
-  server: 213.163.207.214
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 22 - sub
-  type: vless
-  server: 170.114.46.6
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 23 - sub
-  type: vless
-  server: 34.87.113.18
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 24 - sub
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 25 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - sub
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 27 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 28 - sub
-  type: vless
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 29 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 30 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 32 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 34 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - sub
-  type: vless
-  server: 170.114.45.6
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 36 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 37 - sub
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 38 - sub
   type: vless
   server: 43.174.193.1
   port: 443
@@ -434,9 +102,352 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇬 新加坡 (Singapore) 39 - sub
+- name: 🇸🇬 新加坡 (Singapore) 10 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 11 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 12 - sub
+  type: vless
+  server: 104.19.95.153
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 13 - sub
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 14 - sub
+  type: vless
+  server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 15 - sub
+  type: vless
+  server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 16 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17 - sub
   type: vmess
   server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 19 - sub
+  type: vless
+  server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 20 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - sub
+  type: vless
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 22 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 23 - sub
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - sub
+  type: vless
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 26 - sub
+  type: vless
+  server: 170.114.46.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 27 - sub
+  type: vless
+  server: 170.114.46.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 28 - sub
+  type: vless
+  server: 170.114.45.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 29 - sub
+  type: vless
+  server: 213.163.207.214
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 30 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 31 - sub
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 32 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 33 - sub
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 34 - sub
+  type: vless
+  server: 170.114.45.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 35 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 36 - sub
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 37 - sub
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 38 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 39 - sub
+  type: vmess
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -456,7 +467,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 41 - sub
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -475,60 +486,36 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 43 - sub
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  type: vmess
+  server: sg.australiacaregroup.site
+  port: 10001
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
 - name: 🇸🇬 新加坡 (Singapore) 44 - sub
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 45 - sub
-  type: vless
-  server: 34.87.113.18
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 46 - sub
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 47 - sub
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -540,57 +527,65 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 47 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 48 - sub
-  type: vless
-  server: 43.174.193.1
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇸🇬 新加坡 (Singapore) 49 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 51 - sub
   type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.nadun.store
+  servername: free-server.techsonic.dev
   network: ws
   ws-opts:
-    path: /
+    path: /free-server.techsonic.dev
     headers:
-      Host: free.nadun.store
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 50 - sub
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 51 - sub
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 52 - sub
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -600,7 +595,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 53 - sub
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -610,7 +605,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 54 - sub
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -620,17 +615,34 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 55 - sub
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: cdn-dynmedia.shalana.shop
 - name: 🇸🇬 新加坡 (Singapore) 56 - sub
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 57 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 58 - sub
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -642,31 +654,20 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 57 - sub
+- name: 🇸🇬 新加坡 (Singapore) 59 - sub
   type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 58 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 59 - sub
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 60 - sub
   type: vless
   server: 170.114.45.6
   port: 8443
@@ -680,26 +681,18 @@ proxies:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 60 - sub
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 61 - sub
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 62 - sub
   type: vless
   server: free.nadun.store
@@ -715,6 +708,18 @@ proxies:
     headers:
       Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 63 - sub
+  type: vless
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 64 - sub
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -724,7 +729,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 64 - sub
+- name: 🇸🇬 新加坡 (Singapore) 65 - sub
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -735,28 +740,10 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 65 - sub
-  type: vless
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 66 - sub
-  type: vless
-  server: cdn-dynmedia.shalana.shop
-  port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 67 - sub
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -764,9 +751,18 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 68 - sub
+- name: 🇸🇬 新加坡 (Singapore) 67 - sub
   type: vless
   server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 68 - sub
+  type: vless
+  server: 213.163.207.214
   port: 443
   uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
   udp: true
@@ -785,7 +781,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 70 - sub
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -795,14 +791,31 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 71 - sub
   type: vless
-  server: 213.163.207.214
+  server: 34.87.113.18
   port: 443
-  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn-dynmedia.shalana.shop
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇸🇬 新加坡 (Singapore) 72 - sub
+  type: vless
+  server: 170.114.46.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 73 - sub
   type: vless
   server: cdn-dynmedia.shalana.shop
   port: 443
@@ -811,16 +824,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: cdn-dynmedia.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 73 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 74 - sub
   type: vless
   server: 217.217.254.126
@@ -834,96 +837,26 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 75 - sub
-  type: vless
-  server: 34.87.113.18
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 76 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 77 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 78 - sub
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 79 - sub
-  type: vless
-  server: 170.114.45.6
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 80 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 81 - sub
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 82 - sub
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 83 - sub
   type: vless
   server: 43.174.193.1
   port: 443
@@ -937,6 +870,78 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇸🇬 新加坡 (Singapore) 78 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 79 - sub
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 80 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 81 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 82 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 83 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 84 - sub
   type: vmess
   server: 149.88.23.207
@@ -947,6 +952,111 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 85 - sub
+  type: vless
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 86 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 87 - sub
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇸🇬 新加坡 (Singapore) 88 - sub
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 89 - sub
+  type: vless
+  server: cdn-dynmedia.shalana.shop
+  port: 443
+  uuid: d3ad7253-2dbd-42fd-9b07-04caea38de54
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-dynmedia.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 90 - sub
+  type: vless
+  server: 34.87.113.18
+  port: 443
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 91 - sub
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 92 - sub
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 93 - sub
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1036,6 +1146,15 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 82 - sub
   - 🇸🇬 新加坡 (Singapore) 83 - sub
   - 🇸🇬 新加坡 (Singapore) 84 - sub
+  - 🇸🇬 新加坡 (Singapore) 85 - sub
+  - 🇸🇬 新加坡 (Singapore) 86 - sub
+  - 🇸🇬 新加坡 (Singapore) 87 - sub
+  - 🇸🇬 新加坡 (Singapore) 88 - sub
+  - 🇸🇬 新加坡 (Singapore) 89 - sub
+  - 🇸🇬 新加坡 (Singapore) 90 - sub
+  - 🇸🇬 新加坡 (Singapore) 91 - sub
+  - 🇸🇬 新加坡 (Singapore) 92 - sub
+  - 🇸🇬 新加坡 (Singapore) 93 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1125,5 +1244,14 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 82 - sub
   - 🇸🇬 新加坡 (Singapore) 83 - sub
   - 🇸🇬 新加坡 (Singapore) 84 - sub
+  - 🇸🇬 新加坡 (Singapore) 85 - sub
+  - 🇸🇬 新加坡 (Singapore) 86 - sub
+  - 🇸🇬 新加坡 (Singapore) 87 - sub
+  - 🇸🇬 新加坡 (Singapore) 88 - sub
+  - 🇸🇬 新加坡 (Singapore) 89 - sub
+  - 🇸🇬 新加坡 (Singapore) 90 - sub
+  - 🇸🇬 新加坡 (Singapore) 91 - sub
+  - 🇸🇬 新加坡 (Singapore) 92 - sub
+  - 🇸🇬 新加坡 (Singapore) 93 - sub
 rules:
 - MATCH,PROXIES
