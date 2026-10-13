@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sub
   type: vless
-  server: 155.103.71.142
+  server: 203.202.232.211
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -15,10 +15,28 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - sub
+  type: vless
+  server: 206.1.102.81
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - sub
+  type: vless
+  server: googol.wookshop.ir
+  port: 17915
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: googol.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 04 - sub
   type: vless
   server: 206.1.102.81
   port: 17915
@@ -34,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
+  - 🇹🇷 土耳其 (Turkey) 03 - sub
+  - 🇹🇷 土耳其 (Turkey) 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
+  - 🇹🇷 土耳其 (Turkey) 03 - sub
+  - 🇹🇷 土耳其 (Turkey) 04 - sub
 rules:
 - MATCH,PROXIES

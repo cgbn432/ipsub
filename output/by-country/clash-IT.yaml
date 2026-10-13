@@ -14,12 +14,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 02 - sub
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 03 - sub
   type: vless
   server: 204.216.216.23
@@ -37,6 +41,13 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 05 - sub
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 06 - sub
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -44,14 +55,95 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 06 - sub
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 - name: 🇮🇹 意大利 (Italy) 07 - sub
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 08 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 09 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 10 - sub
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 11 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 12 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 13 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 14 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 15 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 16 - sub
+  type: vless
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇮🇹 意大利 (Italy) 17 - sub
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -71,6 +163,16 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - sub
   - 🇮🇹 意大利 (Italy) 06 - sub
   - 🇮🇹 意大利 (Italy) 07 - sub
+  - 🇮🇹 意大利 (Italy) 08 - sub
+  - 🇮🇹 意大利 (Italy) 09 - sub
+  - 🇮🇹 意大利 (Italy) 10 - sub
+  - 🇮🇹 意大利 (Italy) 11 - sub
+  - 🇮🇹 意大利 (Italy) 12 - sub
+  - 🇮🇹 意大利 (Italy) 13 - sub
+  - 🇮🇹 意大利 (Italy) 14 - sub
+  - 🇮🇹 意大利 (Italy) 15 - sub
+  - 🇮🇹 意大利 (Italy) 16 - sub
+  - 🇮🇹 意大利 (Italy) 17 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +185,15 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - sub
   - 🇮🇹 意大利 (Italy) 06 - sub
   - 🇮🇹 意大利 (Italy) 07 - sub
+  - 🇮🇹 意大利 (Italy) 08 - sub
+  - 🇮🇹 意大利 (Italy) 09 - sub
+  - 🇮🇹 意大利 (Italy) 10 - sub
+  - 🇮🇹 意大利 (Italy) 11 - sub
+  - 🇮🇹 意大利 (Italy) 12 - sub
+  - 🇮🇹 意大利 (Italy) 13 - sub
+  - 🇮🇹 意大利 (Italy) 14 - sub
+  - 🇮🇹 意大利 (Italy) 15 - sub
+  - 🇮🇹 意大利 (Italy) 16 - sub
+  - 🇮🇹 意大利 (Italy) 17 - sub
 rules:
 - MATCH,PROXIES
