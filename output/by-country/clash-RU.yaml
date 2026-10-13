@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sub
-  type: vless
-  server: 91.215.43.248
+  type: vmess
+  server: renderer-stream-2-114.mirra.now
   port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.kempekl.online
+  servername: renderer-stream-2-114.mirra.now
   network: ws
   ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: my.kempekl.online
+      Host: renderer-stream-2-114.mirra.now
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sub
   type: ss
   server: 130.49.189.158
