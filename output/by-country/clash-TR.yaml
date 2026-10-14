@@ -36,13 +36,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - sub
-  type: ss
-  server: 94.184.42.18
-  port: 8880
-  cipher: chacha20-ietf-poly1305
-  password: AWVyUgWWLc4G47GNo_bx2w
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +44,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
   - 🇹🇷 土耳其 (Turkey) 03 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,6 +52,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
   - 🇹🇷 土耳其 (Turkey) 03 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 - sub
 rules:
 - MATCH,PROXIES
