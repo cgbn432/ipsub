@@ -33,6 +33,42 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - sub
   type: vless
+  server: 38.244.186.167
+  port: 8445
+  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 05 - sub
+  type: vless
+  server: 38.244.186.167
+  port: 8445
+  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
+  servername: www.samsung.com
+  client-fingerprint: ios
+- name: 🇵🇱 PL 06 - sub
+  type: vless
+  server: 38.244.186.167
+  port: 8445
+  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
+  servername: www.samsung.com
+  client-fingerprint: safari
+- name: 🇵🇱 PL 07 - sub
+  type: vless
   server: 2.26.225.89
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -49,6 +85,9 @@ proxy-groups:
   - 🇵🇱 PL 02 - sub
   - 🇵🇱 PL 03 - sub
   - 🇵🇱 PL 04 - sub
+  - 🇵🇱 PL 05 - sub
+  - 🇵🇱 PL 06 - sub
+  - 🇵🇱 PL 07 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +97,8 @@ proxy-groups:
   - 🇵🇱 PL 02 - sub
   - 🇵🇱 PL 03 - sub
   - 🇵🇱 PL 04 - sub
+  - 🇵🇱 PL 05 - sub
+  - 🇵🇱 PL 06 - sub
+  - 🇵🇱 PL 07 - sub
 rules:
 - MATCH,PROXIES
