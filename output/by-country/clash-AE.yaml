@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sub
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,35 +19,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - sub
   type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 03 - sub
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 04 - sub
-  type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,18 +30,46 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - sub
+- name: 🇦🇪 阿联酋 (UAE) 03 - sub
   type: vless
-  server: 45.59.120.217
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - sub
+  type: vless
+  server: 31.57.190.15
   port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 05 - sub
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - sub
   type: vless
   server: 31.57.190.15
@@ -97,125 +97,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - sub
-  type: vless
-  server: 31.57.190.50
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 09 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - sub
-  type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 14 - sub
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - sub
-  type: ss
-  server: 200.181.82.91
-  port: 21737
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 16 - sub
-  type: vless
-  server: 45.59.120.217
-  port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 17 - sub
-  type: ss
-  server: 200.181.82.91
-  port: 21706
-  cipher: aes-256-gcm
-  password: b46733ae-950f-402f-b2b2-c3a400c492f3
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -228,16 +109,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sub
   - 🇦🇪 阿联酋 (UAE) 06 - sub
   - 🇦🇪 阿联酋 (UAE) 07 - sub
-  - 🇦🇪 阿联酋 (UAE) 08 - sub
-  - 🇦🇪 阿联酋 (UAE) 09 - sub
-  - 🇦🇪 阿联酋 (UAE) 10 - sub
-  - 🇦🇪 阿联酋 (UAE) 11 - sub
-  - 🇦🇪 阿联酋 (UAE) 12 - sub
-  - 🇦🇪 阿联酋 (UAE) 13 - sub
-  - 🇦🇪 阿联酋 (UAE) 14 - sub
-  - 🇦🇪 阿联酋 (UAE) 15 - sub
-  - 🇦🇪 阿联酋 (UAE) 16 - sub
-  - 🇦🇪 阿联酋 (UAE) 17 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -250,15 +121,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sub
   - 🇦🇪 阿联酋 (UAE) 06 - sub
   - 🇦🇪 阿联酋 (UAE) 07 - sub
-  - 🇦🇪 阿联酋 (UAE) 08 - sub
-  - 🇦🇪 阿联酋 (UAE) 09 - sub
-  - 🇦🇪 阿联酋 (UAE) 10 - sub
-  - 🇦🇪 阿联酋 (UAE) 11 - sub
-  - 🇦🇪 阿联酋 (UAE) 12 - sub
-  - 🇦🇪 阿联酋 (UAE) 13 - sub
-  - 🇦🇪 阿联酋 (UAE) 14 - sub
-  - 🇦🇪 阿联酋 (UAE) 15 - sub
-  - 🇦🇪 阿联酋 (UAE) 16 - sub
-  - 🇦🇪 阿联酋 (UAE) 17 - sub
 rules:
 - MATCH,PROXIES
