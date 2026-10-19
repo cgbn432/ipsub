@@ -17,44 +17,16 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
+      Host: 91.107.247.173
 - name: 🇩🇪 德国 (Germany) 02 - sub
   type: vless
-  server: 199.232.78.159
+  server: 206.1.103.26
   port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 03 - sub
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - sub
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 05 - sub
-  type: ss
-  server: 31.76.11.83
-  port: 15731
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - sub
+- name: 🇩🇪 德国 (Germany) 03 - sub
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -67,8 +39,25 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 07 - sub
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 04 - sub
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 - sub
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - sub
   type: vless
   server: 57.129.41.216
   port: 80
@@ -81,21 +70,57 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 08 - sub
+- name: 🇩🇪 德国 (Germany) 07 - sub
   type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: copy_az_channel_NUFiLTER_4i.global.ssl.fastly.net.
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 08 - sub
+  type: vless
+  server: 45.135.194.193
+  port: 80
+  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 09 - sub
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - sub
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - sub
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - sub
+  type: ss
+  server: 31.76.11.83
+  port: 15731
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - sub
   type: vmess
   server: de-d21e56c13c.shamanapp.online
   port: 33744
@@ -109,91 +134,8 @@ proxies:
   ws-opts:
     path: /ShamanVMESS2026
     headers:
-      Host: de-d21e56c13c.shamanapp.online
-- name: 🇩🇪 德国 (Germany) 10 - sub
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 11 - sub
-  type: vmess
-  server: 31.76.11.83
-  port: 22366
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 12 - sub
-  type: vless
-  server: p2real33.greewebservices.ir
-  port: 1330
-  uuid: 45da91b7-14f7-46e0-a4a2-a66c1dbd7543
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 13 - sub
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_4i.global.ssl.fastly.net.
+      Host: de-d21e56c13c.shamanapp.online:33744
 - name: 🇩🇪 德国 (Germany) 14 - sub
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - sub
-  type: vmess
-  server: mix2.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server10.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /rthiugoyretdsuigg
-    headers:
-      Host: server10.9966338.xyz
-- name: 🇩🇪 德国 (Germany) 16 - sub
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 17 - sub
   type: vless
   server: 46.225.46.136
   port: 2087
@@ -207,191 +149,7 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 18 - sub
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
-    headers:
-      Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 19 - sub
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 20 - sub
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - sub
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 22 - sub
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 23 - sub
-  type: vless
-  server: 45.135.194.193
-  port: 80
-  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 24 - sub
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 25 - sub
-  type: vless
-  server: 146.75.59.186
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 26 - sub
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_5i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 27 - sub
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 28 - sub
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 29 - sub
-  type: vless
-  server: 206.1.103.26
-  port: 443
-  uuid: 0ad58d97-922c-4e85-b820-9d04dab5b8ec
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 30 - sub
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 31 - sub
-  type: vless
-  server: wwww.qarvian.ir
-  port: 443
-  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: copy_az_channel_NUFiLTER_4i.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 32 - sub
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 33 - sub
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 34 - sub
+- name: 🇩🇪 德国 (Germany) 15 - sub
   type: vless
   server: connect.wecantos.site
   port: 10000
@@ -399,28 +157,56 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 35 - sub
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 16 - sub
+  type: vless
+  server: test.wecantos.site
+  port: 20000
+  uuid: ca59a503-db23-44af-9879-49747d8da98f
   udp: true
-- name: 🇩🇪 德国 (Germany) 36 - sub
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - sub
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - sub
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 19 - sub
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hoert1rert.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 20 - sub
   type: vmess
   server: 31.76.11.83
   port: 22366
   uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
   alterId: 0
   cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 37 - sub
-  type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
   udp: true
   tls: false
   skip-cert-verify: true
@@ -449,23 +235,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 18 - sub
   - 🇩🇪 德国 (Germany) 19 - sub
   - 🇩🇪 德国 (Germany) 20 - sub
-  - 🇩🇪 德国 (Germany) 21 - sub
-  - 🇩🇪 德国 (Germany) 22 - sub
-  - 🇩🇪 德国 (Germany) 23 - sub
-  - 🇩🇪 德国 (Germany) 24 - sub
-  - 🇩🇪 德国 (Germany) 25 - sub
-  - 🇩🇪 德国 (Germany) 26 - sub
-  - 🇩🇪 德国 (Germany) 27 - sub
-  - 🇩🇪 德国 (Germany) 28 - sub
-  - 🇩🇪 德国 (Germany) 29 - sub
-  - 🇩🇪 德国 (Germany) 30 - sub
-  - 🇩🇪 德国 (Germany) 31 - sub
-  - 🇩🇪 德国 (Germany) 32 - sub
-  - 🇩🇪 德国 (Germany) 33 - sub
-  - 🇩🇪 德国 (Germany) 34 - sub
-  - 🇩🇪 德国 (Germany) 35 - sub
-  - 🇩🇪 德国 (Germany) 36 - sub
-  - 🇩🇪 德国 (Germany) 37 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -491,22 +260,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 18 - sub
   - 🇩🇪 德国 (Germany) 19 - sub
   - 🇩🇪 德国 (Germany) 20 - sub
-  - 🇩🇪 德国 (Germany) 21 - sub
-  - 🇩🇪 德国 (Germany) 22 - sub
-  - 🇩🇪 德国 (Germany) 23 - sub
-  - 🇩🇪 德国 (Germany) 24 - sub
-  - 🇩🇪 德国 (Germany) 25 - sub
-  - 🇩🇪 德国 (Germany) 26 - sub
-  - 🇩🇪 德国 (Germany) 27 - sub
-  - 🇩🇪 德国 (Germany) 28 - sub
-  - 🇩🇪 德国 (Germany) 29 - sub
-  - 🇩🇪 德国 (Germany) 30 - sub
-  - 🇩🇪 德国 (Germany) 31 - sub
-  - 🇩🇪 德国 (Germany) 32 - sub
-  - 🇩🇪 德国 (Germany) 33 - sub
-  - 🇩🇪 德国 (Germany) 34 - sub
-  - 🇩🇪 德国 (Germany) 35 - sub
-  - 🇩🇪 德国 (Germany) 36 - sub
-  - 🇩🇪 德国 (Germany) 37 - sub
 rules:
 - MATCH,PROXIES
