@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - sub
+- name: 🇮🇪 IE 01 - sub
   type: ss
-  server: 194.68.44.42
-  port: 64546
+  server: 20.166.51.228
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  password: LVMlhvK82To1FGsy
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - sub
+  - 🇮🇪 IE 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - sub
+  - 🇮🇪 IE 01 - sub
 rules:
 - MATCH,PROXIES
