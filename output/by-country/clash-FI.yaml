@@ -8,31 +8,17 @@ proxies:
   type: vless
   server: 188.114.98.0
   port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fi1.merky.one
+  servername: server8.9966338.xyz
   network: ws
   ws-opts:
-    path: /mky-ws-4f19c8a7
+    path: /fdtiouasopeiyre0r95y8?ed=2560
     headers:
-      Host: fi1.merky.one
+      Host: server8.9966338.xyz
 - name: 🇫🇮 FI 02 - sub
-  type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 05355ffb-a8f3-473b-cb9c-c8401897b03f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: firefox.com
-  network: ws
-  ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
-    headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 03 - sub
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -45,20 +31,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - sub
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server8.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /fdtiouasopeiyre0r95y8?ed=2560
-    headers:
-      Host: server8.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +38,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
-  - 🇫🇮 FI 03 - sub
-  - 🇫🇮 FI 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,7 +45,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - sub
   - 🇫🇮 FI 02 - sub
-  - 🇫🇮 FI 03 - sub
-  - 🇫🇮 FI 04 - sub
 rules:
 - MATCH,PROXIES
