@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - sub",
-        "🇲🇽 MX 02 - sub",
-        "🇲🇽 MX 03 - sub",
-        "🇲🇽 MX 04 - sub",
-        "🇲🇽 MX 05 - sub"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - sub",
-        "🇲🇽 MX 02 - sub",
-        "🇲🇽 MX 03 - sub",
-        "🇲🇽 MX 04 - sub",
-        "🇲🇽 MX 05 - sub"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },

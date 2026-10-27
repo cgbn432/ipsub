@@ -8,10 +8,7 @@
         "auto",
         "🇨🇳 CN 01 - sub",
         "🇨🇳 CN 02 - sub",
-        "🇨🇳 CN 03 - sub",
-        "🇨🇳 CN 04 - sub",
-        "🇨🇳 CN 05 - sub",
-        "🇨🇳 CN 06 - sub"
+        "🇨🇳 CN 03 - sub"
       ]
     },
     {
@@ -20,10 +17,7 @@
       "outbounds": [
         "🇨🇳 CN 01 - sub",
         "🇨🇳 CN 02 - sub",
-        "🇨🇳 CN 03 - sub",
-        "🇨🇳 CN 04 - sub",
-        "🇨🇳 CN 05 - sub",
-        "🇨🇳 CN 06 - sub"
+        "🇨🇳 CN 03 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
