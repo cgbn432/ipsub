@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - sub
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - sub
   type: vless
   server: 2.26.6.1
@@ -24,65 +23,30 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - sub
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - sub
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 05 - sub
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 06 - sub
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 07 - sub
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 08 - sub
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 09 - sub
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 10 - sub
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -102,10 +66,6 @@ proxy-groups:
   - 🇵🇱 PL 04 - sub
   - 🇵🇱 PL 05 - sub
   - 🇵🇱 PL 06 - sub
-  - 🇵🇱 PL 07 - sub
-  - 🇵🇱 PL 08 - sub
-  - 🇵🇱 PL 09 - sub
-  - 🇵🇱 PL 10 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,9 +77,5 @@ proxy-groups:
   - 🇵🇱 PL 04 - sub
   - 🇵🇱 PL 05 - sub
   - 🇵🇱 PL 06 - sub
-  - 🇵🇱 PL 07 - sub
-  - 🇵🇱 PL 08 - sub
-  - 🇵🇱 PL 09 - sub
-  - 🇵🇱 PL 10 - sub
 rules:
 - MATCH,PROXIES
