@@ -6,24 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - sub",
-        "🇵🇭 PH 02 - sub",
-        "🇵🇭 PH 03 - sub",
-        "🇵🇭 PH 04 - sub",
-        "🇵🇭 PH 05 - sub",
-        "🇵🇭 PH 06 - sub"
+        "🇮🇷 IR 01 - sub",
+        "🇮🇷 IR 02 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - sub",
-        "🇵🇭 PH 02 - sub",
-        "🇵🇭 PH 03 - sub",
-        "🇵🇭 PH 04 - sub",
-        "🇵🇭 PH 05 - sub",
-        "🇵🇭 PH 06 - sub"
+        "🇮🇷 IR 01 - sub",
+        "🇮🇷 IR 02 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
