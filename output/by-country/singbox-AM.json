@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - sub",
-        "🇨🇳 CN 02 - sub",
-        "🇨🇳 CN 03 - sub",
-        "🇨🇳 CN 04 - sub"
+        "🇦🇲 AM 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - sub",
-        "🇨🇳 CN 02 - sub",
-        "🇨🇳 CN 03 - sub",
-        "🇨🇳 CN 04 - sub"
+        "🇦🇲 AM 01 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
