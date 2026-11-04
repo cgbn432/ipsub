@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - sub
   type: vless
-  server: 84.23.52.120
-  port: 28448
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.sparxiecn.com
-  network: ws
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: 84.23.52.120
-- name: 🇵🇱 PL 02 - sub
-  type: vless
-  server: 84.23.52.120
-  port: 28447
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.sparxiecn.com
-  network: ws
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: 84.23.52.120
-- name: 🇵🇱 PL 03 - sub
-  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -41,7 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - sub
+- name: 🇵🇱 PL 02 - sub
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -57,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - sub
   - 🇵🇱 PL 02 - sub
-  - 🇵🇱 PL 03 - sub
-  - 🇵🇱 PL 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - sub
   - 🇵🇱 PL 02 - sub
-  - 🇵🇱 PL 03 - sub
-  - 🇵🇱 PL 04 - sub
 rules:
 - MATCH,PROXIES
