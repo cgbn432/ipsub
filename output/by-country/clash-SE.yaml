@@ -5,12 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - sub
-  type: ss
-  server: 13.60.203.88
-  port: 11640
-  cipher: chacha20-ietf-poly1305
-  password: TfOlNVXwjXLEncsLTh4ucO
+  type: vless
+  server: se3.shtil.io
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
