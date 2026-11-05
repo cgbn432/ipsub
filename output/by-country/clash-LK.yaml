@@ -4,31 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - sub
+- name: 🇱🇰 LK 01 - sub
   type: vless
-  server: 172.67.131.125
-  port: 2083
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  server: free.vkehi.store
+  port: 443
+  uuid: e4d1298a-1f21-42e2-a53e-1b22c0645c48
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+  servername: zoom.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - sub
+  - 🇱🇰 LK 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - sub
+  - 🇱🇰 LK 01 - sub
 rules:
 - MATCH,PROXIES
