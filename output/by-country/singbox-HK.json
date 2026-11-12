@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - sub",
-        "🇸🇨 SC 02 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - sub",
-        "🇸🇨 SC 02 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 01 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 02 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
