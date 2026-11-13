@@ -20,6 +20,35 @@ proxies:
     headers:
       Host: 47.244.120.197
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sub
+  type: vless
+  server: 103.42.180.146
+  port: 443
+  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vip.freevpn.cloudns.biz
+  network: ws
+  ws-opts:
+    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
+    headers:
+      Host: vip.freevpn.cloudns.biz
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sub
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - sub
   type: vmess
   server: 47.244.120.197
   port: 36703
@@ -41,6 +70,8 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - sub
   - 🇭🇰 中国香港 (Hong Kong) 02 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +79,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - sub
   - 🇭🇰 中国香港 (Hong Kong) 02 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 03 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 04 - sub
 rules:
 - MATCH,PROXIES
