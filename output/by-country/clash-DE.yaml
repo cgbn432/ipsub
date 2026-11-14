@@ -6,23 +6,27 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sub
   type: vless
-  server: online.shop.ir.eeso.cc
-  port: 39653
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  server: 167.233.129.126
+  port: 2474
+  uuid: 287db857-de04-4212-bd69-5d14083e340e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: online.shop.ir.eeso.cc
 - name: 🇩🇪 德国 (Germany) 02 - sub
-  type: vless
-  server: base.hosamobenl.co.uk
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
 - name: 🇩🇪 德国 (Germany) 03 - sub
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - sub
   type: vless
   server: 87.248.149.50
   port: 443
@@ -31,35 +35,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 04 - sub
-  type: ss
-  server: 193.108.118.247
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇩🇪 德国 (Germany) 05 - sub
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 06 - sub
   type: vless
-  server: 85.192.27.171
-  port: 2053
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 91.107.255.63
+  port: 39653
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 07 - sub
+  servername: online.shop.ir.eeso.cc
+- name: 🇩🇪 德国 (Germany) 06 - sub
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -73,35 +58,30 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 08 - sub
+- name: 🇩🇪 德国 (Germany) 07 - sub
   type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - sub
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn.akamai.steamstatic.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: finalnsdger.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 10 - sub
-  type: ss
-  server: 193.108.119.3
+  server: 193.108.119.2
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 11 - sub
+- name: 🇩🇪 德国 (Germany) 08 - sub
+  type: vless
+  server: online.shop.ir.eeso.cc
+  port: 39653
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: online.shop.ir.eeso.cc
+- name: 🇩🇪 德国 (Germany) 09 - sub
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - sub
   type: vless
   server: 91.107.255.63
   port: 39653
@@ -110,14 +90,46 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: online.shop.ir.eeso.cc
-- name: 🇩🇪 德国 (Germany) 12 - sub
+- name: 🇩🇪 德国 (Germany) 11 - sub
   type: ss
-  server: 185.176.204.18
+  server: 193.108.119.3
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇩🇪 德国 (Germany) 12 - sub
+  type: vless
+  server: 94.184.37.198
+  port: 18401
+  uuid: d7b1a442-678d-4fe1-9fed-590698c3fba9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: access.dastanacloud.ir
 - name: 🇩🇪 德国 (Germany) 13 - sub
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - sub
+  type: ss
+  server: 193.108.119.83
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - sub
+  type: vless
+  server: 91.107.255.63
+  port: 39653
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: online.shop.ir.eeso.cc
+- name: 🇩🇪 德国 (Germany) 16 - sub
   type: vless
   server: 57.129.41.216
   port: 80
@@ -130,87 +142,7 @@ proxies:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 14 - sub
-  type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - sub
-  type: ss
-  server: 51.38.127.93
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 03y5gbnyl4o1hc2n
-  udp: true
-- name: 🇩🇪 德国 (Germany) 16 - sub
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇩🇪 德国 (Germany) 17 - sub
-  type: vless
-  server: 159.195.207.238
-  port: 49313
-  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - sub
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - sub
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - sub
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - sub
-  type: ss
-  server: 193.108.117.111
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - sub
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 23 - sub
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 24 - sub
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 25 - sub
   type: vless
   server: 199.232.78.159
   port: 443
@@ -224,129 +156,14 @@ proxies:
     path: /
     headers:
       Host: finalnsdger.global.ssl.fastly.net.
-- name: 🇩🇪 德国 (Germany) 26 - sub
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - sub
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 28 - sub
-  type: vless
-  server: 89.127.210.244
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 29 - sub
-  type: vless
-  server: 193.233.129.97
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 30 - sub
-  type: vless
-  server: cip.cloudof1.ir
-  port: 8443
-  uuid: 00f7637c-acab-465b-933a-727becde5c1b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sxzwer
-    headers:
-      Host: cip.cloudof1.ir
-- name: 🇩🇪 德国 (Germany) 31 - sub
+- name: 🇩🇪 德国 (Germany) 18 - sub
   type: ss
   server: 213.202.208.199
   port: 7001
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇩🇪 德国 (Germany) 32 - sub
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 33 - sub
-  type: vless
-  server: 84.46.251.105
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 34 - sub
-  type: ss
-  server: 193.108.116.98
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - sub
-  type: vless
-  server: 159.223.20.232
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇩🇪 德国 (Germany) 36 - sub
-  type: vless
-  server: 91.107.255.63
-  port: 39653
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 91.107.255.63
-- name: 🇩🇪 德国 (Germany) 37 - sub
-  type: vless
-  server: 87.248.149.50
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 38 - sub
+- name: 🇩🇪 德国 (Germany) 19 - sub
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -360,23 +177,37 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 39 - sub
+- name: 🇩🇪 德国 (Germany) 20 - sub
   type: vless
-  server: 91.107.255.63
+  server: online.shop.ir.eeso.cc
   port: 39653
   uuid: baded307-189c-4ffc-a271-9acdab51a324
   udp: true
   tls: true
   skip-cert-verify: true
   servername: online.shop.ir.eeso.cc
-- name: 🇩🇪 德国 (Germany) 40 - sub
+- name: 🇩🇪 德国 (Germany) 21 - sub
   type: ss
-  server: 193.108.119.2
+  server: 23.157.88.43
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 41 - sub
+- name: 🇩🇪 德国 (Germany) 22 - sub
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 23 - sub
+  type: ss
+  server: 51.38.127.93
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 03y5gbnyl4o1hc2n
+  udp: true
+- name: 🇩🇪 德国 (Germany) 24 - sub
   type: vless
   server: 91.107.255.63
   port: 39653
@@ -384,24 +215,196 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: online.shop.ir.eeso.cc
-- name: 🇩🇪 德国 (Germany) 42 - sub
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 43 - sub
+  servername: 91.107.255.63
+- name: 🇩🇪 德国 (Germany) 25 - sub
   type: ss
   server: 193.108.117.84
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 44 - sub
+- name: 🇩🇪 德国 (Germany) 26 - sub
+  type: vless
+  server: 159.195.207.238
+  port: 49313
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 27 - sub
+  type: vless
+  server: 199.232.78.120
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 28 - sub
   type: ss
-  server: 193.108.119.83
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 29 - sub
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 30 - sub
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 31 - sub
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 32 - sub
+  type: vless
+  server: online.shop.ir.eeso.cc
+  port: 39653
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: online.shop.ir.eeso.cc
+- name: 🇩🇪 德国 (Germany) 33 - sub
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 34 - sub
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 35 - sub
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 36 - sub
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 37 - sub
+  type: vless
+  server: 185.100.159.129
+  port: 443
+  uuid: 0281a320-21e8-434f-86b7-a7c0db58c0db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: je8r21hqax.dev.onappjet.com
+  network: ws
+  ws-opts:
+    path: /ws/0281a320-21e8-434f-86b7-a7c0db58c0db
+    headers:
+      Host: je8r21hqax.dev.onappjet.com
+- name: 🇩🇪 德国 (Germany) 38 - sub
+  type: ss
+  server: 193.108.117.111
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 39 - sub
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 40 - sub
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 41 - sub
+  type: vless
+  server: 84.200.77.75
+  port: 443
+  uuid: 0281a320-21e8-434f-86b7-a7c0db58c0db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: je8r21hqax.dev.onappjet.com
+  network: ws
+  ws-opts:
+    path: /ws/0281a320-21e8-434f-86b7-a7c0db58c0db
+    headers:
+      Host: je8r21hqax.dev.onappjet.com
+- name: 🇩🇪 德国 (Germany) 42 - sub
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 43 - sub
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
+- name: 🇩🇪 德国 (Germany) 44 - sub
+  type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 45 - sub
+  type: vless
+  server: online.shop.ir.eeso.cc
+  port: 39653
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: online.shop.ir.eeso.cc
+- name: 🇩🇪 德国 (Germany) 46 - sub
+  type: ss
+  server: 193.108.118.247
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -455,6 +458,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 42 - sub
   - 🇩🇪 德国 (Germany) 43 - sub
   - 🇩🇪 德国 (Germany) 44 - sub
+  - 🇩🇪 德国 (Germany) 45 - sub
+  - 🇩🇪 德国 (Germany) 46 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -504,5 +509,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 42 - sub
   - 🇩🇪 德国 (Germany) 43 - sub
   - 🇩🇪 德国 (Germany) 44 - sub
+  - 🇩🇪 德国 (Germany) 45 - sub
+  - 🇩🇪 德国 (Germany) 46 - sub
 rules:
 - MATCH,PROXIES

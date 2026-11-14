@@ -15,6 +15,19 @@ proxies:
   servername: base.hosamobenl.co.uk
 - name: 🇮🇷 IR 02 - sub
   type: vless
+  server: 199.232.78.159
+  port: 80
+  uuid: b826cf54-603d-4d5c-a3a5-273755c0bcfd
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
+- name: 🇮🇷 IR 03 - sub
+  type: vless
   server: 87.248.149.50
   port: 443
   uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
@@ -29,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇮🇷 IR 01 - sub
   - 🇮🇷 IR 02 - sub
+  - 🇮🇷 IR 03 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇮🇷 IR 01 - sub
   - 🇮🇷 IR 02 - sub
+  - 🇮🇷 IR 03 - sub
 rules:
 - MATCH,PROXIES
