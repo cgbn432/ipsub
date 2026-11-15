@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - sub
   type: ss
-  server: glance.asuscomm.com
+  server: 115.161.136.145
   port: 10099
   cipher: chacha20-ietf-poly1305
   password: '12242'
