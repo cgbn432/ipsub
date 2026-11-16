@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - sub
+- name: 🇵🇱 PL 01 - sub
   type: vless
-  server: 170.114.45.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  server: d58daft.plp1.h1cloud.net
+  port: 443
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
+  reality-opts:
+    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+  servername: d58daft.plp1.h1cloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - sub
+  - 🇵🇱 PL 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - sub
+  - 🇵🇱 PL 01 - sub
 rules:
 - MATCH,PROXIES
