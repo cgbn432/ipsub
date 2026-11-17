@@ -46,6 +46,20 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇨🇭 CH 07 - sub
+  type: ss
+  server: 23.166.88.189
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 08 - sub
+  type: ss
+  server: 79.127.184.104
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +71,8 @@ proxy-groups:
   - 🇨🇭 CH 04 - sub
   - 🇨🇭 CH 05 - sub
   - 🇨🇭 CH 06 - sub
+  - 🇨🇭 CH 07 - sub
+  - 🇨🇭 CH 08 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +84,7 @@ proxy-groups:
   - 🇨🇭 CH 04 - sub
   - 🇨🇭 CH 05 - sub
   - 🇨🇭 CH 06 - sub
+  - 🇨🇭 CH 07 - sub
+  - 🇨🇭 CH 08 - sub
 rules:
 - MATCH,PROXIES
