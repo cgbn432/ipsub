@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - sub
-  type: ss
-  server: fn1s.sublinkplas.ir
-  port: 53731
-  cipher: chacha20-ietf-poly1305
-  password: j2-YonHunrTMlNMFlSY4u0UGsBaBgO4b
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - sub
   type: vless
   server: 45.144.234.157
