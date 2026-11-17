@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sub
-  type: vless
-  server: reedbed.filnex.baby
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: reedbed.filnex.baby
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: reedbed.filnex.baby
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sub
   type: ss
   server: 130.49.189.158
@@ -30,14 +23,21 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - sub
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sub
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -48,6 +48,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 - sub
   - 🇷🇺 俄罗斯 (Russia) 04 - sub
+  - 🇷🇺 俄罗斯 (Russia) 05 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,5 +58,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 - sub
   - 🇷🇺 俄罗斯 (Russia) 04 - sub
+  - 🇷🇺 俄罗斯 (Russia) 05 - sub
 rules:
 - MATCH,PROXIES
