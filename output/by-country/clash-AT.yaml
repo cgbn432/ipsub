@@ -26,6 +26,13 @@ proxies:
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
 - name: 🇦🇹 AT 04 - sub
+  type: ss
+  server: 152.53.1.57
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  udp: true
+- name: 🇦🇹 AT 05 - sub
   type: vmess
   server: 154.47.19.225
   port: 1270
@@ -36,13 +43,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
-- name: 🇦🇹 AT 05 - sub
-  type: ss
-  server: 152.53.1.57
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
