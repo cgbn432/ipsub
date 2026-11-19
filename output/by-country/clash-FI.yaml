@@ -5,25 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - sub
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - sub
   type: ss
   server: fn1s.sublinkplas.ir
   port: 53731
   cipher: chacha20-ietf-poly1305
-  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
+  password: g83niIm75fBPKfJ31nak8pAWTiFWLlXY
   udp: true
+- name: 🇫🇮 FI 02 - sub
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 03 - sub
   type: vless
   server: 45.144.234.157
@@ -38,19 +39,27 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - sub
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
   udp: true
-  tls: false
+- name: 🇫🇮 FI 05 - sub
+  type: vless
+  server: 104.17.145.145
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
   skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 05 - sub
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 06 - sub
   type: vless
   server: 198.202.24.142
   port: 2083
@@ -64,6 +73,53 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 07 - sub
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: gDxit1g_RLr2gUB54x1DYbbhHrjBDXLD
+  udp: true
+- name: 🇫🇮 FI 08 - sub
+  type: vless
+  server: 172.64.79.163
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 09 - sub
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 10 - sub
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +130,11 @@ proxy-groups:
   - 🇫🇮 FI 03 - sub
   - 🇫🇮 FI 04 - sub
   - 🇫🇮 FI 05 - sub
+  - 🇫🇮 FI 06 - sub
+  - 🇫🇮 FI 07 - sub
+  - 🇫🇮 FI 08 - sub
+  - 🇫🇮 FI 09 - sub
+  - 🇫🇮 FI 10 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +145,10 @@ proxy-groups:
   - 🇫🇮 FI 03 - sub
   - 🇫🇮 FI 04 - sub
   - 🇫🇮 FI 05 - sub
+  - 🇫🇮 FI 06 - sub
+  - 🇫🇮 FI 07 - sub
+  - 🇫🇮 FI 08 - sub
+  - 🇫🇮 FI 09 - sub
+  - 🇫🇮 FI 10 - sub
 rules:
 - MATCH,PROXIES
