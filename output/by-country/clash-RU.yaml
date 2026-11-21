@@ -23,6 +23,13 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - sub
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sub
   type: vless
   server: 147.45.175.81
   port: 443
@@ -36,44 +43,21 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sub
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - sub
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sub
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - sub
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - sub
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sub
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - sub
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sub
   type: vless
   server: 136.148.83.69
   port: 443
@@ -82,26 +66,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 10 - sub
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - sub
-  type: ss
-  server: 91.206.92.202
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 12 - sub
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sub
   type: ss
   server: 195.133.5.196
   port: 18443
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - sub
+  type: ss
+  server: 91.206.92.202
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -117,9 +94,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - sub
   - 🇷🇺 俄罗斯 (Russia) 08 - sub
   - 🇷🇺 俄罗斯 (Russia) 09 - sub
-  - 🇷🇺 俄罗斯 (Russia) 10 - sub
-  - 🇷🇺 俄罗斯 (Russia) 11 - sub
-  - 🇷🇺 俄罗斯 (Russia) 12 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -134,8 +108,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - sub
   - 🇷🇺 俄罗斯 (Russia) 08 - sub
   - 🇷🇺 俄罗斯 (Russia) 09 - sub
-  - 🇷🇺 俄罗斯 (Russia) 10 - sub
-  - 🇷🇺 俄罗斯 (Russia) 11 - sub
-  - 🇷🇺 俄罗斯 (Russia) 12 - sub
 rules:
 - MATCH,PROXIES
