@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sub
   type: vless
-  server: 103.201.130.126
+  server: 104.19.164.155
   port: 443
-  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tt-9nz.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /item/favourites
+    path: /tyxyws
     headers:
-      Host: tt-9nz.pages.dev
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - sub
   type: vless
-  server: 104.21.0.87
+  server: 43.170.8.95
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,21 +34,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - sub
   type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: freeceshi6.frii.site
-- name: 🇯🇵 日本 (Japan) 04 - sub
-  type: vless
-  server: 152.69.200.216
+  server: 104.27.46.35
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -60,7 +46,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - sub
+- name: 🇯🇵 日本 (Japan) 04 - sub
   type: vless
   server: 172.67.217.240
   port: 443
@@ -74,6 +60,13 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 05 - sub
+  type: ss
+  server: jpa.123069.xyz
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+  udp: true
 - name: 🇯🇵 日本 (Japan) 06 - sub
   type: ss
   server: 84.247.155.196
@@ -82,6 +75,62 @@ proxies:
   password: 3eOFeNssde7PYYMv
   udp: true
 - name: 🇯🇵 日本 (Japan) 07 - sub
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 08 - sub
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 09 - sub
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - sub
+  type: vless
+  server: 104.21.0.87
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - sub
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 12 - sub
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - sub
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 14 - sub
   type: vless
   server: 94.177.131.113
   port: 443
@@ -90,21 +139,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: kuruish.org
-- name: 🇯🇵 日本 (Japan) 08 - sub
+- name: 🇯🇵 日本 (Japan) 15 - sub
   type: ss
-  server: jpa.123069.xyz
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-  udp: true
-- name: 🇯🇵 日本 (Japan) 09 - sub
-  type: ss
-  server: 149.22.87.204
+  server: 84.247.155.196
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 10 - sub
+- name: 🇯🇵 日本 (Japan) 16 - sub
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - sub
   type: vless
   server: 154.31.114.162
   port: 8443
@@ -118,56 +174,242 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - sub
+- name: 🇯🇵 日本 (Japan) 18 - sub
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 12 - sub
+- name: 🇯🇵 日本 (Japan) 19 - sub
   type: vless
-  server: 188.114.98.0
+  server: 104.19.48.107
   port: 443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: freeceshi6.frii.site
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    path: /tyxyws
     headers:
-      Host: freeceshi6.frii.site
-- name: 🇯🇵 日本 (Japan) 13 - sub
-  type: ss
-  server: 149.22.87.241
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - sub
+  type: vless
+  server: 104.19.33.25
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-- name: 🇯🇵 日本 (Japan) 14 - sub
-  type: ss
-  server: 149.22.87.240
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 21 - sub
+  type: vless
+  server: 185.222.43.175
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-- name: 🇯🇵 日本 (Japan) 15 - sub
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 22 - sub
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - sub
+  type: vless
+  server: 103.201.130.126
+  port: 443
+  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tt-9nz.pages.dev
+  network: ws
+  ws-opts:
+    path: /item/favourites
+    headers:
+      Host: tt-9nz.pages.dev
+- name: 🇯🇵 日本 (Japan) 24 - sub
+  type: vless
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 25 - sub
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 26 - sub
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 27 - sub
+  type: vmess
+  server: 162.159.130.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: or3.sfacg.uk
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: 🇯🇵 日本 (Japan) 28 - sub
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 29 - sub
+  type: vless
+  server: 104.21.6.186
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 30 - sub
+  type: vless
+  server: 104.19.12.94
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 31 - sub
+  type: vmess
+  server: 168.110.63.247
+  port: 8081
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 168.110.63.247
+- name: 🇯🇵 日本 (Japan) 32 - sub
+  type: vmess
+  server: 161.33.20.255
+  port: 8880
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: e0856508-d693-450a-a099-455091dc4f25-vm
+    headers:
+      Host: ''
+- name: 🇯🇵 日本 (Japan) 33 - sub
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - sub
   type: ss
   server: 168.138.205.100
   port: 53758
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
   udp: true
-- name: 🇯🇵 日本 (Japan) 16 - sub
-  type: ss
-  server: 84.247.155.196
+- name: 🇯🇵 日本 (Japan) 35 - sub
+  type: vless
+  server: 104.19.48.107
   port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-- name: 🇯🇵 日本 (Japan) 17 - sub
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 36 - sub
   type: vless
   server: 94.177.131.113
   port: 443
@@ -176,14 +418,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: kuruish.org
-- name: 🇯🇵 日本 (Japan) 18 - sub
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 19 - sub
+- name: 🇯🇵 日本 (Japan) 37 - sub
   type: vless
   server: 103.201.130.126
   port: 443
@@ -197,20 +432,6 @@ proxies:
     path: /item/favouritesfp=chrome
     headers:
       Host: tt-9nz.pages.dev
-- name: 🇯🇵 日本 (Japan) 20 - sub
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 21 - sub
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -237,6 +458,22 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - sub
   - 🇯🇵 日本 (Japan) 20 - sub
   - 🇯🇵 日本 (Japan) 21 - sub
+  - 🇯🇵 日本 (Japan) 22 - sub
+  - 🇯🇵 日本 (Japan) 23 - sub
+  - 🇯🇵 日本 (Japan) 24 - sub
+  - 🇯🇵 日本 (Japan) 25 - sub
+  - 🇯🇵 日本 (Japan) 26 - sub
+  - 🇯🇵 日本 (Japan) 27 - sub
+  - 🇯🇵 日本 (Japan) 28 - sub
+  - 🇯🇵 日本 (Japan) 29 - sub
+  - 🇯🇵 日本 (Japan) 30 - sub
+  - 🇯🇵 日本 (Japan) 31 - sub
+  - 🇯🇵 日本 (Japan) 32 - sub
+  - 🇯🇵 日本 (Japan) 33 - sub
+  - 🇯🇵 日本 (Japan) 34 - sub
+  - 🇯🇵 日本 (Japan) 35 - sub
+  - 🇯🇵 日本 (Japan) 36 - sub
+  - 🇯🇵 日本 (Japan) 37 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -263,5 +500,21 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - sub
   - 🇯🇵 日本 (Japan) 20 - sub
   - 🇯🇵 日本 (Japan) 21 - sub
+  - 🇯🇵 日本 (Japan) 22 - sub
+  - 🇯🇵 日本 (Japan) 23 - sub
+  - 🇯🇵 日本 (Japan) 24 - sub
+  - 🇯🇵 日本 (Japan) 25 - sub
+  - 🇯🇵 日本 (Japan) 26 - sub
+  - 🇯🇵 日本 (Japan) 27 - sub
+  - 🇯🇵 日本 (Japan) 28 - sub
+  - 🇯🇵 日本 (Japan) 29 - sub
+  - 🇯🇵 日本 (Japan) 30 - sub
+  - 🇯🇵 日本 (Japan) 31 - sub
+  - 🇯🇵 日本 (Japan) 32 - sub
+  - 🇯🇵 日本 (Japan) 33 - sub
+  - 🇯🇵 日本 (Japan) 34 - sub
+  - 🇯🇵 日本 (Japan) 35 - sub
+  - 🇯🇵 日本 (Japan) 36 - sub
+  - 🇯🇵 日本 (Japan) 37 - sub
 rules:
 - MATCH,PROXIES

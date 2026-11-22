@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - sub
   type: ss
-  server: 79.127.184.104
+  server: 23.166.88.127
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -27,42 +27,28 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 04 - sub
   type: ss
-  server: leviko-ch4066.shopingggg.ir
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 05 - sub
   type: ss
-  server: leviko-ch7557.shopingggg.ir
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 06 - sub
   type: ss
-  server: 23.166.88.127
+  server: 186.190.215.251
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 07 - sub
   type: ss
-  server: leviko-ch7557.shopingggg.ir
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 08 - sub
-  type: ss
-  server: 23.166.88.189
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 CH 09 - sub
-  type: ss
-  server: 186.190.215.251
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -79,8 +65,6 @@ proxy-groups:
   - 🇨🇭 CH 05 - sub
   - 🇨🇭 CH 06 - sub
   - 🇨🇭 CH 07 - sub
-  - 🇨🇭 CH 08 - sub
-  - 🇨🇭 CH 09 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,7 +77,5 @@ proxy-groups:
   - 🇨🇭 CH 05 - sub
   - 🇨🇭 CH 06 - sub
   - 🇨🇭 CH 07 - sub
-  - 🇨🇭 CH 08 - sub
-  - 🇨🇭 CH 09 - sub
 rules:
 - MATCH,PROXIES
