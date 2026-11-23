@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇰🇿 KZ 01 - sub",
-        "🇰🇿 KZ 02 - sub"
+        "🇰🇿 KZ 02 - sub",
+        "🇰🇿 KZ 03 - sub",
+        "🇰🇿 KZ 04 - sub"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 KZ 01 - sub",
-        "🇰🇿 KZ 02 - sub"
+        "🇰🇿 KZ 02 - sub",
+        "🇰🇿 KZ 03 - sub",
+        "🇰🇿 KZ 04 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
