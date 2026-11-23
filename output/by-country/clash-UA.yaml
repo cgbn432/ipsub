@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - sub
+- name: 🇺🇦 UA 01 - sub
   type: ss
-  server: 43.161.217.165
-  port: 80
+  server: 185.164.175.81
+  port: 19999
   cipher: aes-256-gcm
-  password: MySecretPass123
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - sub
+  - 🇺🇦 UA 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - sub
+  - 🇺🇦 UA 01 - sub
 rules:
 - MATCH,PROXIES
