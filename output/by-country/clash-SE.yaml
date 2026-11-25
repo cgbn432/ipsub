@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - sub
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 02 - sub
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 03 - sub
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -17,75 +35,14 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 02 - sub
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 03 - sub
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 04 - sub
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: freeceshi6.frii.site
 - name: 🇸🇪 SE 05 - sub
-  type: ss
-  server: netplus.melvona-digital.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 7HKeZHCfH9TFlVbcvdV-zVFWDFs4T7FX
-  udp: true
-- name: 🇸🇪 SE 06 - sub
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 07 - sub
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 08 - sub
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 09 - sub
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -106,10 +63,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - sub
   - 🇸🇪 SE 04 - sub
   - 🇸🇪 SE 05 - sub
-  - 🇸🇪 SE 06 - sub
-  - 🇸🇪 SE 07 - sub
-  - 🇸🇪 SE 08 - sub
-  - 🇸🇪 SE 09 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,9 +73,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - sub
   - 🇸🇪 SE 04 - sub
   - 🇸🇪 SE 05 - sub
-  - 🇸🇪 SE 06 - sub
-  - 🇸🇪 SE 07 - sub
-  - 🇸🇪 SE 08 - sub
-  - 🇸🇪 SE 09 - sub
 rules:
 - MATCH,PROXIES
