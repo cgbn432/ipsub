@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - sub
+- name: 🇲🇽 MX 01 - sub
   type: ss
-  server: 20.234.98.208
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1fgEGq5a3tJiLpUq
+  server: 147.78.1.35
+  port: 16671
+  cipher: aes-128-gcm
+  password: e738ee417a833b000920bb869cbde400
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - sub
+  - 🇲🇽 MX 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - sub
+  - 🇲🇽 MX 01 - sub
 rules:
 - MATCH,PROXIES
