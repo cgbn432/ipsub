@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sub
-  type: ss
-  server: 107.181.155.27
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: gE-xKyJBjelgHz2-vjexshOhTuxG-0h7
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - sub
-  type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - sub
-  type: ss
-  server: 38.180.104.37
-  port: 19084
-  cipher: aes-128-gcm
-  password: ff4d354078394558933d699be149ad69
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - sub
   type: vless
   server: 143.246.136.128
   port: 50738
@@ -36,6 +13,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - sub
+  type: ss
+  server: 38.180.104.37
+  port: 19084
+  cipher: aes-128-gcm
+  password: ff4d354078394558933d699be149ad69
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sub
   - 🇹🇷 土耳其 (Turkey) 02 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 - sub
 rules:
 - MATCH,PROXIES

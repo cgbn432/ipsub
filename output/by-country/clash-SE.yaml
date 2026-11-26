@@ -25,20 +25,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - sub
-  type: vless
-  server: 13.140.95.76
-  port: 2087
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: senflarelink-node-6b9.pages.dev
-  network: ws
-  ws-opts:
-    path: /flow=
-    headers:
-      Host: senflarelink-node-6b9.pages.dev
-- name: 🇸🇪 SE 04 - sub
   type: ss
   server: 138.199.55.243
   port: 19999
@@ -53,7 +39,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
-  - 🇸🇪 SE 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +47,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
-  - 🇸🇪 SE 04 - sub
 rules:
 - MATCH,PROXIES
