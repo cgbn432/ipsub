@@ -13,80 +13,66 @@ proxies:
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - sub
   type: ss
-  server: 85.155.226.213
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
+  server: 79.127.139.242
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - sub
   type: ss
-  server: 79.127.139.242
+  server: 62.93.179.97
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 04 - sub
   type: ss
-  server: s23.fusetea.ir
-  port: 2089
+  server: 108.181.121.170
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
+  password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 05 - sub
   type: ss
-  server: 62.93.179.117
+  server: 62.93.179.97
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 06 - sub
   type: ss
-  server: 62.93.179.97
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 108.181.121.170
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 07 - sub
-  type: ss
-  server: 108.181.121.170
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 08 - sub
-  type: ss
-  server: 108.181.121.170
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 09 - sub
   type: ss
   server: 108.181.121.178
   port: 443
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 10 - sub
+- name: 🇪🇸 西班牙 (Spain) 08 - sub
   type: ss
-  server: 62.93.179.97
+  server: 62.93.179.117
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 11 - sub
+- name: 🇪🇸 西班牙 (Spain) 09 - sub
+  type: ss
+  server: 85.155.226.213
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 10 - sub
   type: ss
   server: 85.155.226.213
   port: 2089
   cipher: chacha20-ietf-poly1305
   password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 12 - sub
-  type: ss
-  server: S23.fusetea.ir
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -103,8 +89,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - sub
   - 🇪🇸 西班牙 (Spain) 09 - sub
   - 🇪🇸 西班牙 (Spain) 10 - sub
-  - 🇪🇸 西班牙 (Spain) 11 - sub
-  - 🇪🇸 西班牙 (Spain) 12 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,7 +104,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - sub
   - 🇪🇸 西班牙 (Spain) 09 - sub
   - 🇪🇸 西班牙 (Spain) 10 - sub
-  - 🇪🇸 西班牙 (Spain) 11 - sub
-  - 🇪🇸 西班牙 (Spain) 12 - sub
 rules:
 - MATCH,PROXIES
