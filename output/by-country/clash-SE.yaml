@@ -29,6 +29,30 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 04 - sub
+  type: vmess
+  server: leviko-se3307.shopingggg.ir
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 05 - sub
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +61,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
+  - 🇸🇪 SE 04 - sub
+  - 🇸🇪 SE 05 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +71,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - sub
   - 🇸🇪 SE 02 - sub
   - 🇸🇪 SE 03 - sub
+  - 🇸🇪 SE 04 - sub
+  - 🇸🇪 SE 05 - sub
 rules:
 - MATCH,PROXIES

@@ -6,14 +6,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 - sub",
+        "🇹🇷 土耳其 (Turkey) 02 - sub",
+        "🇹🇷 土耳其 (Turkey) 03 - sub",
+        "🇹🇷 土耳其 (Turkey) 04 - sub",
+        "🇹🇷 土耳其 (Turkey) 05 - sub",
+        "🇹🇷 土耳其 (Turkey) 06 - sub",
+        "🇹🇷 土耳其 (Turkey) 07 - sub",
+        "🇹🇷 土耳其 (Turkey) 08 - sub",
+        "🇹🇷 土耳其 (Turkey) 09 - sub",
+        "🇹🇷 土耳其 (Turkey) 10 - sub",
+        "🇹🇷 土耳其 (Turkey) 11 - sub",
+        "🇹🇷 土耳其 (Turkey) 12 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 - sub",
+        "🇹🇷 土耳其 (Turkey) 02 - sub",
+        "🇹🇷 土耳其 (Turkey) 03 - sub",
+        "🇹🇷 土耳其 (Turkey) 04 - sub",
+        "🇹🇷 土耳其 (Turkey) 05 - sub",
+        "🇹🇷 土耳其 (Turkey) 06 - sub",
+        "🇹🇷 土耳其 (Turkey) 07 - sub",
+        "🇹🇷 土耳其 (Turkey) 08 - sub",
+        "🇹🇷 土耳其 (Turkey) 09 - sub",
+        "🇹🇷 土耳其 (Turkey) 10 - sub",
+        "🇹🇷 土耳其 (Turkey) 11 - sub",
+        "🇹🇷 土耳其 (Turkey) 12 - sub"
       ],
       "url": "https://www.google.com/generate_204"
     },
