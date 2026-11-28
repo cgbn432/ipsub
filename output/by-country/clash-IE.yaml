@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇮🇪 IE 02 - sub
   type: ss
-  server: 20.166.121.63
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: RoARJLTlMJOFVIuQ
+  server: 146.70.90.195
+  port: 17453
+  cipher: aes-128-gcm
+  password: cVCf+5/dBI353UY4YcN3nS05znsJYtLF
   udp: true
 proxy-groups:
 - name: PROXIES

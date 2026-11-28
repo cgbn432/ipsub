@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - sub
+- name: 🇹🇷 土耳其 (Turkey) 01 - sub
   type: ss
-  server: 109.248.148.141
-  port: 11471
-  cipher: aes-128-gcm
-  password: EE2VWeKohIwTx6HGOo1X2p1jjNAUfRWS
+  server: tr.subscriptionservice.ir
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 - sub
 rules:
 - MATCH,PROXIES
