@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - sub
+- name: 🇨🇾 CY 01 - sub
   type: ss
-  server: tr.subscriptionservice.ir
-  port: 2089
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  server: 45.15.168.192
+  port: 53844
+  cipher: aes-256-gcm
+  password: YlRC1gM26W2b9DrNGuW7Ol+6D3yZkF2uMLfT1DTGPiM=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - sub
+  - 🇨🇾 CY 01 - sub
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - sub
+  - 🇨🇾 CY 01 - sub
 rules:
 - MATCH,PROXIES
